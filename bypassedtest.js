@@ -351,10 +351,6 @@ function _0x517f() {
     "<b>Kode\x20Lisensi</b>\x20yang\x20digunakan\x20tidak\x20valid.</b><br><br><small>#ERR_KEY</small>",
     "=s0",
   ];
-  _0x517f = function () {
-    return _0x563541;
-  };
-  return _0x517f();
 }
 function license() {
   var _0x5580b9 = _0x1315;
@@ -396,22 +392,23 @@ function license() {
         _0x2da2f6(0x29f);
     return (document[_0x2da2f6(0x1b7)][_0x2da2f6(0x286)] = _0x9d8ec4);
   }
-
+  if (typeof $license_key === _0x5580b9(0x1f8)) _0xfd2318(_0x5580b9(0x221));
+  else {
     if (typeof $license_item === _0x5580b9(0x1f8)) _0xfd2318(_0x5580b9(0x1be));
     else {
-        if (
+      if (
         location[_0x5580b9(0x234)][_0x5580b9(0x1b5)](_0x5580b9(0x28f)) !=
-            -0x1 ||
+          -0x1 ||
         location[_0x5580b9(0x234)][_0x5580b9(0x1b5)](_0x5580b9(0x241)) !=
-            -0x1 ||
+          -0x1 ||
         location[_0x5580b9(0x234)]["indexOf"](_0x5580b9(0x1db)) != -0x1
-        ) {
+      ) {
         console[_0x5580b9(0x2a8)](_0x5580b9(0x1da));
         var _0x3e1f6b = document[_0x5580b9(0x1f6)](_0x5580b9(0x1d5));
         if (_0x3e1f6b === null) _0xfd2318(_0x5580b9(0x1af));
         else {
-            var _0x279a14 = new Date()[_0x5580b9(0x246)]();
-            (_0x3e1f6b["innerHTML"] =
+          var _0x279a14 = new Date()[_0x5580b9(0x246)]();
+          (_0x3e1f6b["innerHTML"] =
             "&#0169;" +
             _0x279a14 +
             "\x20&#8212;\x20Made\x20with.\x20<a\x20href=\x22https://lapak.kangrian.net/" +
@@ -419,39 +416,52 @@ function license() {
             _0x5580b9(0x228)),
             _0x3e1f6b[_0x5580b9(0x262)](_0x5580b9(0x1a4), _0x5580b9(0x1fd));
         }
-        } else {
-
-                if ($license_item) {
+      } else {
+        if ($license_key === "") _0xfd2318(_0x5580b9(0x225));
+        else {
+          const _0x538dfc = _0x525f01($license_key)[_0x5580b9(0x23f)]("|")[0x0],
+            _0x4f4ddc = _0x525f01($license_key)["split"]("|")[0x1];
+          if (_0x538dfc == "" || _0x538dfc == undefined)
+            _0xfd2318(_0x5580b9(0x1ff));
+          else {
+            if (location[_0x5580b9(0x234)][_0x5580b9(0x1b5)](_0x538dfc) == -0x1)
+              _0xfd2318(
+                _0x5580b9(0x19a) +
+                  _0x538dfc +
+                  "</b><br><br><small>#ERR_DOMAIN</small>"
+              );
+            else {
+              if (_0x4f4ddc != $license_item) {
                 function _0x145389(_0x3243a4) {
-                    var _0x49ae6d = _0x5580b9;
-                    _0x3243a4 = _0x3243a4[_0x49ae6d(0x23f)]("\x20");
-                    for (
+                  var _0x49ae6d = _0x5580b9;
+                  _0x3243a4 = _0x3243a4[_0x49ae6d(0x23f)]("\x20");
+                  for (
                     var _0x575e24 = 0x0;
                     _0x575e24 < _0x3243a4["length"];
                     _0x575e24++
-                    ) {
+                  ) {
                     _0x3243a4[_0x575e24] =
-                        _0x3243a4[_0x575e24][_0x49ae6d(0x282)](0x0)[
+                      _0x3243a4[_0x575e24][_0x49ae6d(0x282)](0x0)[
                         _0x49ae6d(0x21b)
-                        ]() + _0x3243a4[_0x575e24][_0x49ae6d(0x22c)](0x1);
-                    }
-                    return (
+                      ]() + _0x3243a4[_0x575e24][_0x49ae6d(0x22c)](0x1);
+                  }
+                  return (
                     (_0x3243a4 = _0x3243a4[_0x49ae6d(0x1d2)]("\x20")), _0x3243a4
-                    );
+                  );
                 }
                 _0xfd2318(
-                    _0x5580b9(0x26b) +
+                  _0x5580b9(0x26b) +
                     _0x145389($license_item[_0x5580b9(0x239)]("-", "\x20")) +
                     _0x5580b9(0x1f4)
                 );
-                } else console[_0x5580b9(0x2a8)](_0x5580b9(0x2a4));
-            
-            
-        
+              } else console[_0x5580b9(0x2a8)](_0x5580b9(0x2a4));
+            }
+          }
         }
-    }   
-}   
-
+      }
+    }
+  }
+}
 $(document)[_0x2942c0(0x202)](function () {
   var _0x2be499 = _0x2942c0;
   $(_0x2be499(0x26c))[_0x2be499(0x26a)](function () {
